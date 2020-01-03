@@ -43,6 +43,10 @@ def send_mail():
             cprint("\n\nGoodbeye!\n", "blue")
     except:
         cprint("\n[Error] Something went wrong...", "red")
+        cprint("\nMake sure you have entered all the information correct.", "blue")
+        cprint("\nAlso make sure you have turnet Less Secure Apps to [On] in gmail settings.", "blue")
+        cprint("To turn Less Secure Apps setting to [On] open the following link:", "blue")
+        cprint("\nhttps://myaccount.google.com/security?pli=1#connectedapps", "yellow")
         cprint("\nDo you wish to restart the app?", "blue")
         restart = input(">>> ")
         if restart.lower() == "yes" or restart.lower() == "y":
